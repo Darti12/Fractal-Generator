@@ -13,7 +13,7 @@ class Vector:
         self.x = int((self.x + vector.x)*divisor)
         self.y = int((self.y + vector.y)*divisor)
 
-class Weird:
+class Fractal:
     def __init__(self, initialPoints, divisor, screenSize):
         self.divisor = divisor
         self.initialPoints = initialPoints
@@ -60,4 +60,4 @@ if __name__=="__main__":
 
     divisor = float(input("Enter divisor value between 0 and 1: "))
 
-    sim = Weird(points, divisor, screenSize)
+    sim = Fractal(points, divisor, screenSize)
